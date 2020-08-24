@@ -9,7 +9,7 @@ import (
 func main() {
 	printInfo()
 	args := os.Args[1:]
-	fmt.Println("[*] Args: ", args)
+	//fmt.Println("[*] Args: ", args)
 	if len(args) < 1 {
 		fmt.Println("[*] Please provide an argument!")
 	} else {
