@@ -13,7 +13,16 @@ func main() {
 	if len(args) < 1 {
 		fmt.Println("[*] Please provide an argument!")
 	} else {
-		core.GetEntryForTerm(args[0])
+		var term string;
+		for i := 0; i < len(args); i++ {
+			if i == 0 {
+				term = args[i];
+			} else {
+				term = term + "+" + args[i]
+			}
+		}
+
+		core.GetEntryForTerm(term)
 	}
 }
 
